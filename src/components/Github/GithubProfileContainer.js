@@ -23,7 +23,7 @@ function GithubProfileContainer({history}) {
 
   const handleProfileAdd = useCallback((event) => {
     event.preventDefault(); // Submit 이벤트 발생했을 때 새로고침 방지
-    const alreadyProfile = profileListData.filter(profileListData => profileListData.id === profile.id);
+    const alreadyProfile = Array.isArray(profileListData) && profileListData.filter(profileListData => profileListData.id === profile.id);
     if (alreadyProfile.length !== 0) {
       notification['error']({
         message: '프로필 등록 실패',
@@ -47,7 +47,7 @@ function GithubProfileContainer({history}) {
 
   const handleDeleteProfile = (data, id) => {
     dispatch(deleteUserProfile(data, id));
-    const deletedProfile = data.filter(data => data.id === id);
+    const deletedProfile = Array.isArray(data) && data.filter(data => data.id === id);
     notification['info']({
       message: '프로필 삭제',
       description: `${deletedProfile[0].login} 님의 프로필이 삭제되었습니다.`
