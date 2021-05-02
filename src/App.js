@@ -16,7 +16,7 @@ function App() {
       <Route path="/todos" component={TodoContainer} />
       <Route path="/posts" exact component={PostListContainer} />
       <Route path="/posts/:id" component={PostItemContainer} />
-      <Route path="/github" component={GithubProfileContainer} />
+      <Route path="/" component={GithubProfileContainer} />
     </div>
   );
 }
