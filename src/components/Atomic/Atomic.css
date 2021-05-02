@@ -1,0 +1,23 @@
+.header {
+  display:flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid grey;
+  padding-left: 50px;
+  font-size: 24px;
+}
+
+.header :visited :hover :active{
+  all: unset;
+  outline: none;
+  text-decoration: none;
+}
+
+.title :visited :hover :active{
+  all: unset;
+  outline: none;
+  text-decoration: none;
+  color: black;
+}
