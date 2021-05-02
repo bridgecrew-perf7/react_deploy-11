@@ -18,7 +18,7 @@ function GithubProfileList(
   return (
     <div>
       <h2>사용자 목록</h2>
-      {profileListData && profileListData.map(profile => (
+      {profileListData && profileListData.forEach(profile => (
         profile ? 
         <>
           <div className="GithubProfile" key={profile.id}>
