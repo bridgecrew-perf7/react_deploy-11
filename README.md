@@ -5,7 +5,7 @@
 #### Description
 - github 계정 검생 및 CRUD
 #### URL
-- http://52.79.237.204/
+- http://52.79.237.204/ (닫음, 내돈 돌려줘요..)
 #### techStact
 - React
 - Redux
